@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custos de Produção, como calcular e como produzir!</title>
+    <style>
+        /* Estilos do cabeçalho e do título */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #CD5C5C;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner da navegação lateral */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: 	#FA8072;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para os links de navegação */
+        .nav-link {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 0; /* Espaçamento no topo e na base */
+            border-top: 1px solid transparent; /* Borda transparente na parte superior */
+            border-bottom: 1px solid transparent; /* Borda transparente na parte inferior */
+        }
+
+        /* Estilo para os links de navegação quando hover */
+        .nav-link:hover {
+            background-color: #ddd;
+            border-color: 	#800000;
+        }
+
+        /* Estilo para o conteúdo à direita do menu */
+        .main-content {
+            width: calc(100% - 220px);
+            padding: 20px;
+            margin-left: 220px;
+        }
+
+        /* Estilos do contêiner do gráfico */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+       <div class="nav-container">
+        <img src="https://scontent.fplu37-1.fna.fbcdn.net/v/t39.30808-6/365950379_6078589938916260_6747128306030146809_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHh_1mSPj7fSYcDBGzADzqF1EqdtlmHMgvUSp22WYcyC_jRNqwt_v-2H1wgxf5OnZopnbFHg532pC3PAfQJhf6R&_nc_ohc=ujFuHnY4hfsAX8fsTvf&_nc_ht=scontent.fplu37-1.fna&oh=00_AfDTxko7qMDZM3EGVWkSiKLeNBGcr0SLsru1HhmP5EZK1w&oe=64D459C4"
+        alt="User Image" width="200" height="200" >
+        <p> </p>
+        <a><b> MENU </b></a>
+        <p> </p>
+        <a class="nav-link" href="#custos-producao"><b>Custos de Produção</b></a>
+        <a class="nav-link" href="#diferenca"><b>Diferença entre despesa, custo e Gasto</b></a>
+        <a class="nav-link" href="#conceitos"><b>Tipos de Custos</b></a>
+        <a class="nav-link" href="#grafico"><b>Curva de Custos</b></a>
+    </div>
+
+    <div class="main-content">
+        <div class="image">
+            <img src="https://scontent.fplu37-1.fna.fbcdn.net/v/t39.30808-6/366060103_6078513742257213_8507750851992229183_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGynxqHSxMfh7R6TbfVb04Qwtjpt3Q4LIjC2Om3dDgsiEuFHs4oNJNRbVdH8RQ_rvki8H6ioWPiIdyLfYM9g856&_nc_ohc=C_Woi4koEZMAX-quf2k&_nc_ht=scontent.fplu37-1.fna&oh=00_AfAH0uh47lsHqX25-WRZK4ufBZZPm7Pf-AIxCrvBcY8JTQ&oe=64D35E1F" 
+            alt="User Image" width=100% height=100%  >
+
+        </div>        
+
+        <div class="container">
+            <div class="content">
+                <section id="custos-producao">
+                    <h2>O que são custos de produção?</h2>
+                    <p>Custos de produção referem-se a todos os custos relativos a qualquer atividade produtiva que vise ofertar um serviço ou manufaturar um produto.</p>
+                    <p>Esses custos podem ser tanto fixos quanto variáveis, a depender do nível de demanda — ou seja, a quantidade de produtos fabricados ou serviços prestados.</p>
+                    <p>Entre as despesas consideradas, incluem-se o custo da matéria-prima, o salário dos funcionários, o uso e manutenção do maquinário, os custos logísticos, alguns impostos, entre outros.</p>
+                    <p>Segundo a autora Maria Silva, os custos de produção exercem um papel crucial na tomada de decisão das empresas, afetando diretamente a margem de lucro e a competitividade no mercado. Assim, afirmamos que os custos de produção servem de base para que a empresa determine o preço final da sua solução, a considerar ainda indicadores como lucratividade, margem de contribuição e ponto de equilíbrio.</p>    
+                </section>
+
+                <section id="diferenca">
+                    <h2>Qual a diferença entre custo, despesa e gasto?</h2>
+                    <p>Para entendermos um pouco mais da importância de calcular o custo de produção, vamos entender a diferença entre custo, despesa e gasto.</p>
+                    <strong>Custo</strong>
+                    <p>O custo é todo investimento que o gestor precisa aplicar para que a engrenagem da produção gire como, por exemplo, matéria-prima, água, eletricidade, manutenção e depreciação do maquinário, transporte, logística, entre outros.</p>
+                    <strong>Despesa</strong>
+                    <p>As despesas são valores que a empresa precisa ter para manter o funcionamento da estrutura mínima. Esses valores se aplicam em softwares de gestão, folhas de pagamento, plano de telefone, arrendamento, material de escritório e podem ser divididas entre custos fixos e custos variáveis.</p>
+                    <strong>Gastos</strong>
+                    <p>Os gastos são os valores que a empresa não previu no orçamento, mas que são necessários para não prejudicar o fluxo de produção. Alguns exemplos de gastos são substituição de peças com defeitos, assistência técnica de urgência, entre outros.</p>    
+                </section>
+
+                <section id="conceitos">
+                    <h2>Tipos de custos de produção</h2>
+                    <li><strong>Custo variável:</strong> "Esses custos variáveis são aqueles que oscilam em relação à quantidade produzida. Um custo variável aumentará ou diminuirá conforme a produção aumenta ou diminui. Exemplos incluem matérias-primas e salários dos trabalhadores."</li>
+                    <li><strong>Custo fixo:</strong> "Os custos fixos não variam conforme a quantidade produzida. Como em impostos, terras, benfeitorias e sistematização. Um exemplo seria o aluguel de uma fábrica, uma empresa paga o mesmo valor de aluguel, quer produza 1 unidade ou 1000 unidades de seu produto.
+                    "</li>
+                    <li><strong> Custo variável médio (CVMe):</strong>Ele diz respeito ao custo variável para cada unidade produzida. Variável importante para a precificação correta do produto</li>
+                    <li><strong>Custo total:</strong> "O custo total é a soma dos custos fixos e custos variáveis. É o montante total gasto pela empresa na produção de um determinado número de unidades."</li>
+                    <li><strong>Custo Marginal:</strong> "O custo marginal é o custo de produzir uma unidade adicional do produto além da produção atual. É crucial para determinar o nível ideal de produção, pois a empresa deve avaliar se o custo adicional de produção vale o retorno esperado."</li>
+                    <li><strong>Custo de Oportunidade:</strong> "O custo de oportunidade se refere ao que é perdido ao escolher uma alternativa em detrimento de outra. Por exemplo, ao optar por morar em um apartamento próprio, você abre mão da oportunidade de alugá-lo e ganhar renda extra."</li>
+               </section>
+
+                <section id="grafico">
+                    <h2>Cálculo dos custos de produção</h2>
+                    <p>Como o nome indica, ela considera todo o dinheiro investido para produzir o que está em estoque.</p>
+                      <p>A fórmula é:</p>
+                      <blockquote class="wp-block-quote">
+                          <p><em>Matéria-prima + mão de obra + custos fixos (aluguel, manutenção etc) e variáveis = Custos de produção</em></p>
+                      </blockquote>
+                      <p>Então, se Vilma gasta R$2000 de matéria-prima e outros custos variáveis, R$1100 de aluguel, R$200 de manutenções e gastos extras, R$1500 de salário para um funcionário, seu custo total de produção no mês é de: R$4800</p>
+                      <h2>Curvas de custos</h2>
+                      <p><S.Span><b>Curva de custo marginal:</b> </S.Span>Sobe com o aumento da quantidade produzida;</p>
+                      <p><S.Span><b>Curva de custo médio:</b> </S.Span>A curva de custo médio tem forma de U. Em baixos níveis de produção o custo médio é alto porque o custo fixo é dividido por poucas unidades produzidas. O custo médio declina quando a produção aumenta. O custo médio começa a subir porque os custos variáveis aumentam substancialmente com o maior nível de produção;</p>      
+                      <div id="curve_chart" style="width: 900px; height: 500px;"></div>
+                      <p>Sempre que o custo marginal é menor que o custo total médio, o custo total médio está diminuindo. Sempre que o custo marginal é maior que o custo total médio, o custo total médio está aumentando. A curva de custo marginal cruza o a curva de custo total médio no ponto de escala eficiente. A escala eficiente é quantidade que minimiza o custo total médio.</p>
+           
+                </section>
+
+                <section id="referencia">
+                    <h2>Referência</h2>
+                    <p>Referências utilizadas no conteúdo.</p>
+                    <blockquote class="wp-block-quote">
+                      <p><em>Horngren, C. T., Datar, S. M., & Rajan, M. V. (2019). Contabilidade de Custos (14ª edição). Pearson.</em></p>
+                      <p><em> DANTAS, Tiago. "Gastos, custos e despesas"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/economia/gastos-custos-despesas.htm. Acesso em 05 de agosto de 2023 </p></em>
+                      <p><em> IUDÍCIBUS, Sérgio. Análise de custos. 2. ED. São Paulo: Atlas, 1993 </p></em>
+                      <p><em>Rossetti, J. P. Introdução à economia. 20 ed. São Paulo: Atlas, 2003.</p></em>
+                      <p><em>Pindyck,R. S.; Rubinfeld, D. L. Microeconomia. 7 ed. São Paulo: Pearson Education do Brasil, 2010.</p></em>
+                      <p><em> Equipe Suno Research. "Custo de produção: o que é, como calcular e sua importância." Suno Research. Disponível em: https://www.suno.com.br/artigos/custo-producao/. Acesso em 05 de agosto de 2023 </p> </em>
+                      <p><em>"Análise dos Custos de Produção e sua Influência na Tomada de Decisão Empresarial" por Maria Silva, João Santos e Pedro Almeida, publicado na revista "Gestão e Economia", volume 10, número 2, páginas 35-50, em 2022.</em></p>
+                  </blockquote>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          <!-- Adicione o script do gráfico -->
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawChart);
+      
+              function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                      ['Year', 'Sales', 'Expenses'],
+                      ['2004',  1000,      400],
+                      ['2005',  1170,      460],
+                      ['2006',  660,       1120],
+                      ['2007',  1030,      540]
+                  ]);
+      
+                  var options = {
+                      title: 'Desempenho da Empresa',
+                      curveType: 'function',
+                      legend: { position: 'bottom' },
+                      colors: ['#3366cc', '#dc3912']
+                  };
+      
+                  var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+      
+                  chart.draw(data, options);
+              }
+          </script>
+      
+        }
+    </script>
+</body>
+</html>

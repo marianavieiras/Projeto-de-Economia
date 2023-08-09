@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráfico de Desempenho da Empresa</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004',  1000,      400],
+                ['2005',  1170,      460],
+                ['2006',  660,       1120],
+                ['2007',  1030,      540]
+            ]);
+
+            var options = {
+                title: 'Desempenho da Empresa',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                colors: ['#3366cc', '#dc3912']
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <style>
+        /* Estilos do cabeçalho e do título */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3366cc;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Estilos do contêiner do gráfico */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos do link para a âncora */
+        #link_grafico, #link_conceitos, #link_tipos {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3366cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        #link_grafico:hover, #link_conceitos:hover, #link_tipos:hover {
+            background-color: #2c5aa8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" onclick="location.href='#';">
+        <h1>Gráfico de Desempenho da Empresa</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div id="curve_chart" style="width: 900px; height: 500px;"></div>
+            <p>Descrição do gráfico e análise dos dados...</p>
+        </div>
+    </div>
+</body>
+</html>
