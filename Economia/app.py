@@ -23,7 +23,7 @@ def tipos():
         'tipo2': '...',
         # Adicione mais tipos aqui
     }
-    return jsonify(tipos_data)
+    return jsonify(tipos_data) 
 
 # Adicione outras rotas e endpoints conforme necessário
 
